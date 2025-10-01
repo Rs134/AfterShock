@@ -1,7 +1,7 @@
 import './index.css'
 import Header from './Components/Header';
 import Headline from './Components/Headline';
-
+import Service from './Components/Service';
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
     <div>
       <Header/>
       <Headline/>
+      <Service/>
     </div>
 
   )
