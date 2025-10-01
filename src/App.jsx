@@ -1,10 +1,15 @@
 import './index.css'
 import Header from './Components/Header';
+import Headline from './Components/Headline';
+
 
 function App() {
 
   return (
-    <Header/>
+    <div>
+      <Header/>
+      <Headline/>
+    </div>
 
   )
 }

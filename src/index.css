@@ -15,6 +15,7 @@ header{
     justify-content: space-evenly;
     align-items: center;
     font-size: 30px;
+    background-color: rgb(10, 10, 10);
 
 }
 
@@ -25,8 +26,9 @@ header{
 }
 
 nav{
-    border: 2px solid white;
-    border-radius: 10px;
+    border-left: solid white;
+    border-right: solid white;
+    border-radius: 20px;
     padding: 30px;
 }
 
@@ -53,4 +55,8 @@ nav{
     text-decoration-color: rgb(255, 191, 0);
 }
 
-
+.intro{
+    margin-top: 150px;
+    border: 2px solid whitesmoke;
+    
+}
