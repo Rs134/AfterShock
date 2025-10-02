@@ -25,16 +25,16 @@ function Headline() {
       </div>
       <div className="box2">
                 <div className="card">
-                    <h1 className="card-title">Guided Conversations</h1>
-                    <p className="card-description">Aftershock’s chatbot offers empathetic, judgment-free dialogue designed to ease anxiety, reduce fear, and help survivors process their emotions at their own pace.</p>
+                    <h1 className="card-title">Our Purpose</h1>
+                    <p className="card-description">At Aftershock, we are dedicated to supporting individuals who have experienced car accidents. We believe recovery goes beyond physical healing—it’s about addressing emotional scars and restoring peace of mind.</p>
                 </div>
                 <div className="card">
-                    <h1 className="card-title">Driving Anxiety</h1>
-                    <p className="card-description">Through step-by-step strategies, coping techniques, and positive reinforcement, Aftershock helps users rebuild confidence behind the wheel and gradually overcome accident-related fears.</p>
+                    <h1 className="card-title">Our Approach</h1>
+                    <p className="card-description">We focus on making mental health support more accessible, compassionate, and tailored to each survivor’s unique journey. Our goal is to empower individuals to process their fears and build resilience at their own pace.</p>
                 </div>
                 <div className="card">
-                    <h1 className="card-title">Tailored Guidance</h1>
-                    <p className="card-description">Every survivor’s journey is unique. Aftershock adapts its therapeutic responses to individual needs, providing practical tips, mindfulness exercises, and personalized resources to support long-term healing.</p>
+                    <h1 className="card-title">Our Vision</h1>
+                    <p className="card-description">We envision a future where every survivor feels understood, supported, and equipped to turn trauma into strength. Aftershock is committed to being a trusted companion on the road to emotional and mental recovery.</p>
                 </div>
             </div>
       {accidentData.length > 0 &&  <div className="graph-wrapper">

@@ -95,7 +95,6 @@ nav{
     background-color: rgba(42, 42, 57, 0.242);
     padding: 20px;
     width: 350px;
-    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,6 +110,7 @@ nav{
 .card-description{ 
     color: white;
     text-align: center;
+    font-size: 18px;
 }
 
 .graph-wrapper {
@@ -131,34 +131,39 @@ nav{
 
 .service{
     margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
+    color: white;
 }
 
 .service-title{
     font-size: 40px;
     letter-spacing: 5px;
-}
-
-.service-subtitle{
-    color: white;
     text-align: center;
-    font-size: 25px;
 }
 
-.service-button{
-    padding: 15px 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(58, 248, 99);
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-    transition: .3s all ease-in-out;
-    width: 200px;
+.service-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+.service-box{
+    background-color: rgba(42, 42, 57, 0.242);
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.service-box-container-2{
+    background-color: royalblue;
+    padding: 20px;
+}
+
+
 
 
 
