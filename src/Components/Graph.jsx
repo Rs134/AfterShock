@@ -12,7 +12,6 @@ function Graph({ data }) {
         label: 'Car Accidents per Year',
         data: data.map(d => d.totalAccidents),
         borderColor: ' white',
-        backgroundColor: 'rgb(0, 14, 69)',
         fill: true,
       }
     ]

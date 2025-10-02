@@ -20,21 +20,21 @@ function Headline() {
   return (
     <div className="intro">
       <div className="intro-text">
-        <h1 id="intro-title">Our Mission</h1>
+        <h1 className="title intro-title">Our Mission</h1>
         <h2 id="intro-subtitle">Aftershock empowers car accident survivors to overcome fear and rebuild confidence through compassionate, AI-driven therapeutic support.</h2>
       </div>
       <div className="box2">
                 <div className="card">
-                    <h1 className="card-title">AI-Powered Therapy</h1>
-                    <p className="card-description">Utilizing advanced AI technology to provide personalized therapeutic support for trauma recovery.</p>
+                    <h1 className="card-title">Guided Conversations</h1>
+                    <p className="card-description">Aftershock’s chatbot offers empathetic, judgment-free dialogue designed to ease anxiety, reduce fear, and help survivors process their emotions at their own pace.</p>
                 </div>
                 <div className="card">
-                    <h1 className="card-title">AI-Powered Therapy</h1>
-                    <p className="card-description">Utilizing advanced AI technology to provide personalized therapeutic support for trauma recovery.</p>
+                    <h1 className="card-title">Driving Anxiety</h1>
+                    <p className="card-description">Through step-by-step strategies, coping techniques, and positive reinforcement, Aftershock helps users rebuild confidence behind the wheel and gradually overcome accident-related fears.</p>
                 </div>
                 <div className="card">
-                    <h1 className="card-title">AI-Powered Therapy</h1>
-                    <p className="card-description">Utilizing advanced AI technology to provide personalized therapeutic support for trauma recovery.</p>
+                    <h1 className="card-title">Tailored Guidance</h1>
+                    <p className="card-description">Every survivor’s journey is unique. Aftershock adapts its therapeutic responses to individual needs, providing practical tips, mindfulness exercises, and personalized resources to support long-term healing.</p>
                 </div>
             </div>
       {accidentData.length > 0 &&  <div className="graph-wrapper">
