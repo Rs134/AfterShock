@@ -20,9 +20,23 @@ function Headline() {
   return (
     <div className="intro">
       <div className="intro-text">
-        <h1 id="intro-title">Accidents All Over</h1>
-        <h2 id="intro-subtitle">Take A Look.</h2>
+        <h1 id="intro-title">Our Mission</h1>
+        <h2 id="intro-subtitle">Aftershock empowers car accident survivors to overcome fear and rebuild confidence through compassionate, AI-driven therapeutic support.</h2>
       </div>
+      <div className="box2">
+                <div className="card">
+                    <h1 className="card-title">AI-Powered Therapy</h1>
+                    <p className="card-description">Utilizing advanced AI technology to provide personalized therapeutic support for trauma recovery.</p>
+                </div>
+                <div className="card">
+                    <h1 className="card-title">AI-Powered Therapy</h1>
+                    <p className="card-description">Utilizing advanced AI technology to provide personalized therapeutic support for trauma recovery.</p>
+                </div>
+                <div className="card">
+                    <h1 className="card-title">AI-Powered Therapy</h1>
+                    <p className="card-description">Utilizing advanced AI technology to provide personalized therapeutic support for trauma recovery.</p>
+                </div>
+            </div>
       {accidentData.length > 0 &&  <div className="graph-wrapper">
           <Graph data={accidentData} />
         </div>}
