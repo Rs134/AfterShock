@@ -19,9 +19,61 @@ function Graph({ data }) {
 
   const options = {
     responsive: true,
+    layout: {
+      padding: {
+        left: 1,   // extra spacing on the left
+        right: 1,  // extra spacing on the right
+        top: 5,    // extra spacing on the top
+        bottom: 5  // extra spacing on the bottom
+      }
+    },
     plugins: {
-      legend: { position: 'bottom' },    }
+      legend: {
+        position: 'bottom',
+        labels: {
+          font: { size: 20 },
+          color: 'white'
+        }
+      },
+      title: {
+        display: true,
+        text: 'Car Accidents Over The Years',
+        font: { size: 24, weight: 'bold' },
+        color: 'white'
+      }
+    },
+    scales: {
+      x: {
+        ticks: {
+          padding: 15,   // extra space between labels and axis line
+          font: { size: 18 },
+          color: 'white'
+        },
+        title: {
+          display: true,
+          text: 'Year',
+          font: { size: 20, weight: 'bold' },
+          color: 'white'
+        }
+      },
+      y: {
+        ticks: {
+          padding: 15,   // extra space between numbers and axis line
+          font: { size: 18 },
+          color: 'white'
+        },
+        title: {
+          display: true,
+          text: 'Total Accidents',
+          font: { size: 20, weight: 'bold' },
+          color: 'white'
+        }
+      }
+    }
   };
+  
+
+  
 
   return <Line data={chartData} options={options} />;
 }
