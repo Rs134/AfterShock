@@ -4,17 +4,17 @@ function Testimonials (){
             <h1 className="title test-title"> Testimonials</h1>
             <div className="reviews">
                 <div className="review-box">
-                    <h1 className="name"> Test</h1>
+                    <h1 className="name"> Testvververv</h1>
                     <p className="description"> Test</p>
                     <img src="" />
                 </div>
                 <div className="review-box">
-                    <h1 className="name"> Test</h1>
+                    <h1 className="name"> Testvververv</h1>
                     <p className="description"> Test</p>
                     <img src="" />
                 </div>
                 <div className="review-box">
-                    <h1 className="name"> Test</h1>
+                    <h1 className="name"> Testvververv</h1>
                     <p className="description"> Test</p>
                     <img src="" />
                 </div>
