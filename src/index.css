@@ -68,6 +68,7 @@ nav{
 }
 .title{
     color: rgb(58, 248, 99);
+    text-align: center;
 }
 .intro-title{
     font-size: 50px;
@@ -267,6 +268,11 @@ nav{
     cursor: pointer;
   }
   
+.test-title{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
 
 
 
