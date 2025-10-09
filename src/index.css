@@ -207,65 +207,77 @@ nav{
     background-color: rgb(0, 254, 55);
 }
 
-.chatbot {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+/* ChatbotPage.css */
+
+.chatbot-container {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6; /* Tailwind gray-100 */
+    padding: 1rem;
   }
   
-  .chatbot-header {
-    background: #4a90e2;
-    color: white;
-    padding: 10px;
+  .chatbot-box {
+    width: 100%;
+    max-width: 24rem; /* 384px */
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
   }
   
   .chatbot-messages {
     flex: 1;
-    padding: 10px;
     overflow-y: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
   
-  .message.user {
-    text-align: right;
-    margin: 5px 0;
-    color: #333;
+  .chatbot-message {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    max-width: 80%;
   }
   
-  .message.bot {
-    text-align: left;
-    margin: 5px 0;
-    color: #4a90e2;
+  .chatbot-message.user {
+    background-color: #3b82f6; /* Tailwind blue-500 */
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .chatbot-message.bot {
+    background-color: #e5e7eb; /* Tailwind gray-200 */
+    color: black;
+    align-self: flex-start;
+  }
+  
+  .chatbot-input-wrapper {
+    display: flex;
   }
   
   .chatbot-input {
-    display: flex;
-    border-top: 1px solid #ddd;
-  }
-  
-  .chatbot-input input {
     flex: 1;
-    padding: 10px;
-    border: none;
+    border: 1px solid #d1d5db; /* Tailwind gray-300 */
+    padding: 0.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
     outline: none;
   }
   
-  .chatbot-input button {
-    padding: 10px;
-    border: none;
-    background: #4a90e2;
+  .chatbot-button {
+    background-color: #3b82f6; /* Tailwind blue-500 */
     color: white;
+    padding: 0 1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    border: none;
     cursor: pointer;
   }
+  
 
 .test-container{
     margin-top: 100px;
