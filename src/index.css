@@ -279,20 +279,30 @@ nav{
     margin-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
 }
 
 .review-box{
-    box-shadow: 15px 20px 1px white;
-    color: white;
-    background-color: #4a90e2;
+    /* box-shadow: 15px 20px 1px white; */
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
     text-align: center;
-    padding: 10px;
+    width: 40%;
 }
 
 .description{
     border-bottom: 5px solid black;
     padding-bottom: 5px;
+}
+
+.name{
+    color: black;
+}
+
+.description{
+    color: navy;
+    text-align: center;
 }
 
 
