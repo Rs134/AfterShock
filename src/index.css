@@ -207,77 +207,6 @@ nav{
     background-color: rgb(0, 254, 55);
 }
 
-/* ChatbotPage.css */
-
-.chatbot-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f3f4f6; /* Tailwind gray-100 */
-    padding: 1rem;
-  }
-  
-  .chatbot-box {
-    width: 100%;
-    max-width: 24rem; /* 384px */
-    background-color: #ffffff;
-    border-radius: 1rem;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .chatbot-messages {
-    flex: 1;
-    overflow-y: auto;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .chatbot-message {
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.5rem;
-    max-width: 80%;
-  }
-  
-  .chatbot-message.user {
-    background-color: #3b82f6; /* Tailwind blue-500 */
-    color: white;
-    align-self: flex-end;
-  }
-  
-  .chatbot-message.bot {
-    background-color: #e5e7eb; /* Tailwind gray-200 */
-    color: black;
-    align-self: flex-start;
-  }
-  
-  .chatbot-input-wrapper {
-    display: flex;
-  }
-  
-  .chatbot-input {
-    flex: 1;
-    border: 1px solid #d1d5db; /* Tailwind gray-300 */
-    padding: 0.5rem;
-    border-radius: 0.5rem 0 0 0.5rem;
-    outline: none;
-  }
-  
-  .chatbot-button {
-    background-color: #3b82f6; /* Tailwind blue-500 */
-    color: white;
-    padding: 0 1rem;
-    border-radius: 0 0.5rem 0.5rem 0;
-    border: none;
-    cursor: pointer;
-  }
-  
 
 .test-container{
     margin-top: 100px;
@@ -302,9 +231,13 @@ nav{
     text-align: center;
     width: 20%;
     padding: 10px;
-
+    transition: .8s ease;
 }
 
+.review-box:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
 .description{
     border-bottom: 5px solid black;
     padding-bottom: 30px;
