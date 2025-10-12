@@ -256,3 +256,19 @@ nav{
 .review-img{
     width: 25%;
 }
+
+footer{
+    margin-top: 200px;
+    background-color: rgb(0, 1, 5);
+    padding: 10px;
+}
+
+.footer-heading{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+    border: 2px solid rgb(227, 176, 255);
+    margin: 0px 40px;
+}
+
