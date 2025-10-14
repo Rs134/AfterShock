@@ -4,6 +4,7 @@ import Headline from './Components/Headline';
 import Service from './Components/Service';
 import Testimonials from './Components/Testimonials';
 import Footer from './Footer';
+import Chatbot from './Components/Chatbot';
 
 function App() {
 
