@@ -1,7 +1,4 @@
-import { useNavigate } from "react-router-dom";
-
 function Service() {
-  const navigate = useNavigate();
   return (
     <div className="service">
       <h1 className="title service-title"> Introducing Our Chatbot</h1>
@@ -20,7 +17,6 @@ function Service() {
             <p className="service-box-description">Always available when survivors need it most, offering comfort and guidance at any stage of recovery.</p>
           </div>
         </div>
-
         <div className="service-box-container-2">
           <h2 className="service-box-2-title">Empowering Recovery, One Chat at a Time</h2>
           <button className="service-button" onClick={() => navigate("/chatbot")}>
