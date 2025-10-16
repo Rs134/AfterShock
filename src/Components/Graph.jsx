@@ -38,8 +38,8 @@ function Graph({ data }) {
       title: {
         display: true,
         text: 'Car Accidents Over The Years',
-        font: { size: 24, weight: 'bold' },
-        color: 'rgb(58, 248, 99)'
+        font: { size: 30, weight: 'bold' },
+        color: 'rgb(107, 90, 255)'
       }
     },
     scales: {
@@ -47,7 +47,7 @@ function Graph({ data }) {
         ticks: {
           padding: 15,   // extra space between labels and axis line
           font: { size: 18 },
-          color: 'rgb(58, 248, 99)'
+          color: 'rgb(0, 255, 225)'
         },
         title: {
           display: true,
@@ -60,7 +60,7 @@ function Graph({ data }) {
         ticks: {
           padding: 15,   // extra space between numbers and axis line
           font: { size: 18 },
-          color: 'rgb(58, 248, 99)'
+          color: 'rgb(0, 255, 225)'
         },
         title: {
           display: true,
