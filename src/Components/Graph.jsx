@@ -47,7 +47,7 @@ function Graph({ data }) {
         ticks: {
           padding: 15,   // extra space between labels and axis line
           font: { size: 18 },
-          color: 'rgb(0, 255, 225)'
+          color: 'rgb(0, 94, 255)'
         },
         title: {
           display: true,
@@ -60,7 +60,7 @@ function Graph({ data }) {
         ticks: {
           padding: 15,   // extra space between numbers and axis line
           font: { size: 18 },
-          color: 'rgb(0, 255, 225)'
+          color: 'rgb(0, 94, 255)'
         },
         title: {
           display: true,
