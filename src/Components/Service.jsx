@@ -19,7 +19,7 @@ function Service() {
         </div>
         <div className="service-box-container-2">
           <h2 className="service-box-2-title">Empowering Recovery, One Chat at a Time</h2>
-          <button className="service-button" onClick={() => navigate("/chatbot")}>
+          <button className="service-button">
             Get Started
           </button>
         </div>

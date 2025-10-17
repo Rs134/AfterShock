@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 body{
     width: 100vw;
     height: 100vh;
@@ -21,8 +26,9 @@ header{
 .logo{
     color: white;
     font-family: Arial;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     color: rgb(0, 94, 255);
+    font-size: 40px;
 }
 
 nav{
@@ -132,8 +138,11 @@ nav{
     cursor: pointer;
 }
 
+#services{
+    scroll-margin-top: 50px;
+}
 .service{
-    margin-top: 100px;
+    margin-top: 120px;
     color: white;
 }
 
@@ -206,36 +215,38 @@ nav{
     cursor: pointer;
     background-color: rgb(107, 90, 255);
 }
-.chat-container {
-    max-width: 500px;
-    margin: auto;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
+.chat-section {
+    padding: 50px 20px;
+    background-color: rgb(11, 11, 11); /* Matches header theme */
+    color: white;
+    text-align: center;
   }
   
-  .messages {
-    flex: 1;
-    overflow-y: auto;
-    margin-bottom: 1rem;
+  .chat-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: rgb(0, 94, 255); /* Theme blue */
+    font-family: Arial, sans-serif;
+    letter-spacing: 2px;
   }
   
-  .message.user {
-    text-align: right;
-    color: blue;
+  .chat-container {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   }
   
-  .message.assistant {
-    text-align: left;
-    color: green;
+  .chat-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
   }
   
-  .input-area {
-    display: flex;
-    gap: 0.5rem;
-  }
+  
   
 
 .test-container{
