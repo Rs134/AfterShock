@@ -11,13 +11,12 @@ export default function Chatbot() {
     setMessages([...messages, userMessage]);
     setInput("");
 
-    // Call backend API
     try {
         const res = await fetch("/api/chat", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ message: userMessage.text })
-});
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: userMessage.text })
+      });
 
 if (!res.ok) {
   console.error("Server error", res.status);
@@ -34,7 +33,7 @@ setMessages((prev) => [...prev, botMessage]);
 
   return (
     <div className="chatbot-container">
-      <h1>AfterShock Chatbot</h1>
+      <h1 className="bot-header">AfterShock Chatbot</h1>
       <div className="chatbox">
         {messages.map((msg, idx) => (
           <div

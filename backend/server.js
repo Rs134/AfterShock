@@ -10,7 +10,6 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// Only create real OpenAI client if API key exists
 const client = process.env.OPENAI_API_KEY
   ? new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
   : null;
@@ -26,17 +25,12 @@ app.post("/api/chat", async (req, res) => {
     let reply;
 
     if (client) {
-      // Real OpenAI request
       const response = await client.chat.completions.create({
-        model: "gpt-3.5-turbo",
+        model: "gpt-4o-mini",
         messages: [{ role: "user", content: message }],
       });
       reply = response.choices[0].message.content;
-    } else {
-      // MOCK response for development
-      console.log("Using mock OpenAI response (no API key)");
-      reply = `🤖 [Mock reply] You said: "${message}"`;
-    }
+    } 
 
     res.json({ reply });
   } catch (err) {
