@@ -32,6 +32,7 @@ setMessages((prev) => [...prev, botMessage]);
   };
 
   return (
+    
     <div className="chatbot-container">
       <h1 className="bot-header">AfterShock Chatbot</h1>
       <div className="chatbox">

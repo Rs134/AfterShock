@@ -27,10 +27,17 @@ app.post("/api/chat", async (req, res) => {
     if (client) {
       const response = await client.chat.completions.create({
         model: "gpt-4o-mini",
-        messages: [{ role: "user", content: message }],
+        messages: [
+          {
+            role: "system",
+            content: "You are a helpful, friendly, and concise mental health support chatbot named Airbag. Not only are you entitled to mental health support but you specialize in helping those who experienced car accidents or were part of it. Always respond empathetically and give actionable advice when appropriate."
+          },
+          { role: "user", content: message },
+        ],
       });
       reply = response.choices[0].message.content;
     } 
+    
 
     res.json({ reply });
   } catch (err) {
