@@ -27,9 +27,7 @@ function Service() {
         <div className="service-box-container-2">
           <img src="bot.jpg" alt="Chatbot Illustration" className="service-image" />
           <h2 className="service-box-2-title">Empowering Recovery, One Chat at a Time</h2>
-          <button className="service-button" onClick={goToChatbot}>
-            Get Started
-          </button>
+
         </div>
       </div>
 
