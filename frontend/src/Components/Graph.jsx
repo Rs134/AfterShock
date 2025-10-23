@@ -3,7 +3,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recha
 
 function Graph({ data }) {
   return (
-    <div style={{ width: "90%" }}> 
+    <div style={{ width: "85%" }}> 
       <ResponsiveContainer width="100%" height={650}>
         <BarChart
           data={data}

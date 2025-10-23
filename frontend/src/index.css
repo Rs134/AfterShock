@@ -336,10 +336,12 @@ nav{
     cursor: pointer;
     width: 100px;
     font-size: 18px;
+    transition: .5s all ease-in-out;
   }
   
   .chat-input button:hover {
     background-color: rgb(75, 55, 255);
+    transform: translateY(-10px);
   }
   
   
