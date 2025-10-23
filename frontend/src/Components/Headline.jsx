@@ -37,6 +37,7 @@ function Headline() {
                     <p className="card-description">We envision a future where every survivor feels understood, supported, and equipped to turn trauma into strength. Aftershock is committed to being a trusted companion on the road to emotional and mental recovery.</p>
                 </div>
             </div>
+            
       {accidentData.length > 0 &&  <div className="graph-wrapper">
           <Graph data={accidentData} />
         </div>}

@@ -127,10 +127,11 @@ nav{
     margin-top: 100px;
     transition: .5s all ease-in-out;
     width: 100%;
-    height: 550px;
+    height: 750px;
     display: flex;
     justify-content: center;
     padding: 40px;
+    align-items: center;
     
   }
 
@@ -199,6 +200,7 @@ nav{
     margin-bottom: 10px;
     border-top: 5px solid white;
     padding-top: 20px;
+    color: rgb(107, 90, 255);
 }
 
 
@@ -247,75 +249,8 @@ nav{
       opacity: 1;
     }
   }
-  
 
-.test-container{
-    margin-top: 100px;
-    background-color: rgb(16, 16, 16);
-    padding: 50px;
-}
-  
-.test-title{
-    font-size: 45px;
-    text-align: center;
-}
-.reviews{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    background-color: color(16, 16, 16)
-}
-
-.review-box{
-    box-shadow: 15px 10px 1px rgb(0, 94, 255);
-    color: rgb(255, 255, 255);
-    background-color: rgb(11, 11, 11);
-    text-align: center;
-    width: 25%;
-    padding: 10px;
-    transition: .8s ease;
-}
-
-.review-box:hover{
-    transform: translateY(-10px);
-    cursor: pointer;
-}
-.description{
-    border-bottom: 5px solid rgb(255, 255, 255);
-    padding-bottom: 30px;
-    font-size: 20px;
-}
-
-.name{
-    color: rgb(107, 90, 255);
-}
-
-.description{
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-.review-img{
-    width: 25%;
-}
-
-footer{
-    margin-top: 200px;
-    background-color: rgb(11, 11, 11);
-    padding: 10px;
-}
-
-.footer-heading{
-    color: white;
-    font-size: 25px;
-    text-align: center;
-    letter-spacing: 2px;
-    margin: 0px 40px;
-}
-
-.bot-header{
+  .bot-header{
     text-align: center;
     font-size: 40px;
     letter-spacing: 2px;
@@ -407,3 +342,70 @@ footer{
     background-color: rgb(75, 55, 255);
   }
   
+  
+
+.test-container{
+    margin-top: 100px;
+    background-color: rgb(16, 16, 16);
+    padding: 50px;
+}
+  
+.test-title{
+    font-size: 45px;
+    text-align: center;
+}
+.reviews{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: color(16, 16, 16);
+}
+
+.review-box{
+    box-shadow: 15px 10px 1px rgb(0, 94, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(11, 11, 11);
+    text-align: center;
+    width: 25%;
+    padding: 10px;
+    transition: .8s ease;
+}
+
+.review-box:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.description{
+    border-bottom: 5px solid rgb(255, 255, 255);
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.name{
+    color: rgb(107, 90, 255);
+}
+
+.description{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.review-img{
+    width: 25%;
+}
+
+footer{
+    margin-top: 200px;
+    background-color: rgb(11, 11, 11);
+    padding: 10px;
+}
+
+.footer-heading{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0px 40px;
+}

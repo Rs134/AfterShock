@@ -1,11 +1,4 @@
-import { useNavigate } from "react-router-dom";
-
 function Service() {
-  const navigate = useNavigate();
-
-  const goToChatbot = () => {
-    navigate("/chatbot");
-  };
   return (
     <div className="service">
       <h1 className="title service-title"> Introducing Our Chatbot</h1>
