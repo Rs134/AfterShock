@@ -3,7 +3,7 @@ import styles from "../Auth.module.css"; // ✅ Import styles as an object
 function Signup() {
   return (
     <div className={styles.signup}>
-      <h1 className={styles.signupHeading}>Sign Up Here</h1>
+      <h1 className={styles.signupHeading}>Sign Up Page</h1>
       <span className={styles.divider}></span>
 
       <form className={styles.signupForm}>
@@ -37,7 +37,7 @@ function Signup() {
 
       <button className={styles.signupButton} type="submit">Sign Up</button>
       <p className={styles.signupEndStatement}>
-        Already have an account? Log in here
+        Already have an account? <a href="/login"> Log in here</a>
       </p>
     </div>
   );

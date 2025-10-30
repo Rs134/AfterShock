@@ -14,13 +14,17 @@ body{
 
 }
 
-header{ 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 30px;
-    background-color: rgb(11, 11, 11);
-
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
+  background-color: rgb(11, 11, 11);
+  position: fixed;
+  z-index: 100;
+  width: 100%;          
+  top: 0;               
+  left: 0;
 }
 
 .logo{
@@ -42,18 +46,18 @@ nav{
     gap: 50px;
 }
 
-.nav-link:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-}
+
 
 .nav-link {
-    transition: text-decoration-color .5s ease-out;
-    text-decoration-color: transparent;
     color: white;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    transition: border-color 1s ease;
 }
-
+.nav-link:hover {
+  cursor: pointer;
+  border-color: rgb(75, 55, 255); 
+}
 .signup-button{
     background-color: rgb(107, 90, 255);
     color: white;
@@ -71,17 +75,15 @@ nav{
     text-decoration: none;
 }
 
-.nav-link:hover {
-    text-decoration-color: rgb(0, 94, 255);
+#about{
+    scroll-margin-top: 95px;
 }
-
 .intro{
-    margin-top: 100px;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 
 .intro-text{
@@ -157,7 +159,7 @@ nav{
 }
 
 #services{
-    scroll-margin-top: 50px;
+    scroll-margin-top: 130px;
 }
 .service{
     margin-top: 120px;
@@ -373,6 +375,11 @@ nav{
     font-size: 45px;
     text-align: center;
 }
+
+#testimonials{
+  scroll-margin-top: 80px;
+}
+
 .reviews{
     margin-top: 20px;
     display: flex;

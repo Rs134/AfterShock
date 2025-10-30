@@ -76,3 +76,17 @@
     margin-top: 10px;
   }
   
+  .signupEndStatement a {
+    color: rgb(75, 55, 255);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;   
+    transition: border-color 0.8s ease;    
+  }
+  
+  .signupEndStatement a:hover {
+    border-color: rgb(75, 55, 255); 
+    font-weight: bold;        
+  }
+  
+  
