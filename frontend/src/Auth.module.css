@@ -1,0 +1,78 @@
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(16, 16, 16);
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    padding: 40px;
+    margin: 100px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgb(0, 94, 255);
+    transition: 1s ease-in-out;
+  }
+
+  .signup:hover{
+    box-shadow: 0 0 35px rgb(0, 38, 255);
+    cursor: pointer;
+  }
+  
+  .signupHeading {
+    color: rgb(0, 94, 255);
+    font-size: 36px;
+  }
+  
+  .divider {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid white;
+  }
+  
+  .signupForm {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .signupLabel {
+    color: rgb(107, 90, 255);
+    font-size: 20px;
+  }
+  
+  .signupInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .signupButton {
+    margin-top: 20px;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(107, 90, 255);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .5s all ease-in-out;
+  }
+  
+  .signupButton:hover {
+    background-color: rgb(75, 55, 255);
+    transform: translateY(-5px);
+    text-decoration: none;
+  }
+  
+  .signupEndStatement {
+    color: rgb(0, 94, 255);
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  

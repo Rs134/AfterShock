@@ -3,7 +3,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recha
 
 function Graph({ data }) {
   return (
-    <div style={{ width: "85%" }}> 
+    <div style={{ width: "95%" }}> 
       <ResponsiveContainer width="100%" height={650}>
         <BarChart
           data={data}
@@ -32,13 +32,16 @@ function Graph({ data }) {
             }}
           />
           <Tooltip
-            contentStyle={{
-              backgroundColor: "#020024",
-              borderRadius: "8px",
-              color: "white",
-              fontSize: "18px"
+            contentStyle={{ 
+              backgroundColor: 'rgb(1, 1, 39)', 
+              boxShadow: 'none', 
+              color: 'white'
             }}
+            cursor={{ fill: 'none' }}
+            labelStyle={{ color: 'rgb(107, 90, 255)' }}
+            itemStyle={{ color: 'rgb(0, 94, 255)' }}
           />
+
           <Bar
             dataKey="totalAccidents"
             fill="rgb(107, 90, 255)"
