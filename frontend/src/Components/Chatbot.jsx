@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { marked } from "marked";
 
 export default function Chatbot() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
-  const [isTyping, setIsTyping] = useState(false); 
+  const [isTyping, setIsTyping] = useState(false);
 
   const sendMessage = async () => {
     if (!input.trim()) return;
@@ -11,7 +12,7 @@ export default function Chatbot() {
     const userMessage = { sender: "user", text: input };
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
-    setIsTyping(true); 
+    setIsTyping(true);
 
     try {
       const res = await fetch("/api/chat", {
@@ -28,12 +29,11 @@ export default function Chatbot() {
 
       const data = await res.json();
       const botMessage = { sender: "bot", text: data.reply };
-
       setMessages((prev) => [...prev, botMessage]);
     } catch (err) {
       console.error("Network error:", err);
     } finally {
-      setIsTyping(false); 
+      setIsTyping(false);
     }
   };
 
@@ -46,9 +46,13 @@ export default function Chatbot() {
           <div
             key={idx}
             className={msg.sender === "user" ? "message user" : "message bot"}
-          >
-            {msg.text}
-          </div>
+            dangerouslySetInnerHTML={{
+              __html:
+                msg.sender === "bot"
+                  ? marked.parse(msg.text) // ✅ Convert Markdown to HTML for bot replies
+                  : msg.text, // user messages stay plain
+            }}
+          ></div>
         ))}
 
         {isTyping && (

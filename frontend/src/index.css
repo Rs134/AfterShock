@@ -4,7 +4,6 @@ html {
   
 
 body{
-    width: 100vw;
     height: 100vh;
     overflow-x: hidden;
     margin: 0;
@@ -25,14 +24,20 @@ header {
   width: 100%;          
   top: 0;               
   left: 0;
+  flex-wrap: wrap;
 }
 
 .logo{
     color: white;
-    font-family: Arial;
+    font-family: Verdana, sans-serif;
     letter-spacing: 2px;
     color: rgb(0, 94, 255);
     font-size: 40px;
+    border-bottom: 5px solid rgb(107, 90, 255);
+    border-right: 5px solid rgb(107, 90, 255);
+    border-radius: 10px;
+    padding: 5px 10px;
+    border-top-right-radius: 20px;
 }
 
 nav{
@@ -141,6 +146,15 @@ nav{
     font-size: 18px;
 }
 
+.graph-heading{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(0, 94, 255);
+    margin-top: 100px;
+    letter-spacing: 3px;
+    
+}
+
 .graph-wrapper {
     background-color: rgb(13, 13, 13);
     margin-top: 100px;
@@ -157,6 +171,8 @@ nav{
 .graph-wrapper:hover{
     cursor: pointer;
 }
+
+
 
 #services{
     scroll-margin-top: 130px;
@@ -378,13 +394,15 @@ nav{
 
 #testimonials{
   scroll-margin-top: 80px;
+  width: 100%;
 }
 
 .reviews{
     margin-top: 20px;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
     background-color: color(16, 16, 16);
 }
@@ -434,4 +452,47 @@ footer{
     text-align: center;
     letter-spacing: 2px;
     margin: 0px 40px;
+}
+
+@media(max-width: 1320px){
+
+  .box2{
+        flex-direction: column;
+  }
+
+  .service-content{
+        flex-direction: column;
+  }
+
+}
+
+@media(max-width: 900px){
+
+  .reviews{
+
+  }
+
+  .review-box{
+        width: 70%;
+  } 
+
+}
+
+@media(max-width: 840px){
+  header{
+    padding-top: 20px;
+  }
+
+  #services{
+    scroll-margin-top: 200px;
+  }
+
+  #testimonials{
+    scroll-margin-top: 150px;
+  }
+
+  #about{
+    scroll-margin-top: 150px;
+  }
+
 }
