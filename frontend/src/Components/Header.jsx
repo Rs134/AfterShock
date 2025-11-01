@@ -8,7 +8,6 @@ function Header() {
         <a href="/#about" className="nav-link">About</a>
         <a href="/#services" className="nav-link">Services</a>
         <a href="/#testimonials" className="nav-link">Testimonials</a>
-        <a href="/signup" className="nav-link signup-button">Sign Up</a>
       </nav>
     </header>
   );
