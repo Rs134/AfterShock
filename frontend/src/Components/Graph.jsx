@@ -48,7 +48,7 @@ function Graph({ data }) {
         padding: "20px",
       }}
     >
-      <h2 className="graph-heading">Car Accidents Every Year</h2>
+      <h2 className="graph-heading">NYC Car Accidents 2020-2024 </h2>
 
       <div
         className="graph-inner"

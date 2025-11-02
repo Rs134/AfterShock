@@ -6,12 +6,11 @@ function Headline() {
 
   useEffect(() => {
     const data = [
-      { year: 2020, totalAccidents: 34000 },
-      { year: 2021, totalAccidents: 33000 },
-      { year: 2022, totalAccidents: 32000 },
-      { year: 2023, totalAccidents: 31000 },
-      { year: 2024, totalAccidents: 30000 },
-      { year: 2025, totalAccidents: 29000 }
+      { year: 2020, totalAccidents: 88323 },
+      { year: 2021, totalAccidents: 97059 },
+      { year: 2022, totalAccidents: 100508 },
+      { year: 2023, totalAccidents: 96567 },
+      { year: 2024, totalAccidents: 98000 }
     ];
     setAccidentData(data);
 
