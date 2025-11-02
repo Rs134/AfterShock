@@ -49,8 +49,8 @@ export default function Chatbot() {
             dangerouslySetInnerHTML={{
               __html:
                 msg.sender === "bot"
-                  ? marked.parse(msg.text) // ✅ Convert Markdown to HTML for bot replies
-                  : msg.text, // user messages stay plain
+                  ? marked.parse(msg.text) 
+                  : msg.text, 
             }}
           ></div>
         ))}
