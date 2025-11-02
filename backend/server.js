@@ -6,34 +6,27 @@ import OpenAI from "openai";
 
 dotenv.config();
 
-const app = express(); // ✅ ← You need this line before using `app.use()`
+const app = express();
 
-// --- CORS setup ---
+// ✅ Simpler and more reliable CORS configuration
 const allowedOrigins = [
   "https://aftershock-frontend.onrender.com",
-  "http://localhost:5173"
+  "http://localhost:5173",
 ];
 
-const corsOptions = {
-  origin: function (origin, callback) {
-    // allow requests with no origin (like curl, Postman)
-    if (!origin) return callback(null, true);
-    if (allowedOrigins.includes(origin)) {
-      return callback(null, true);
-    } else {
-      return callback(new Error("Not allowed by CORS"), false);
-    }
-  },
-  methods: ["GET", "POST", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true,
-  optionsSuccessStatus: 200,
-};
+app.use((req, res, next) => {
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
 
-// ✅ Apply CORS globally before routes
-app.use(cors(corsOptions));
-app.options(/.*/, cors(corsOptions));
-
+  res.header("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
+  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  if (req.method === "OPTIONS") {
+    return res.sendStatus(204); // respond OK to preflight
+  }
+  next();
+});
 
 app.use(bodyParser.json());
 
@@ -51,8 +44,6 @@ app.post("/api/chat", async (req, res) => {
   }
 
   try {
-    let reply;
-
     if (client) {
       const response = await client.chat.completions.create({
         model: "gpt-4o-mini",
@@ -66,17 +57,18 @@ app.post("/api/chat", async (req, res) => {
         ],
       });
 
-      reply = response.choices[0].message.content;
+      const reply = response.choices[0].message.content;
+      return res.json({ reply });
+    } else {
+      return res.status(500).json({ reply: "Missing API key configuration" });
     }
-
-    res.json({ reply });
   } catch (err) {
     console.error("OpenAI API error:", err);
     res.status(500).json({ reply: "OpenAI API error" });
   }
 });
 
-// --- Optional root route for testing ---
+// --- Root route for verification ---
 app.get("/", (req, res) => {
   res.send("✅ AfterShock API is running. Use POST /api/chat to talk to the bot.");
 });
