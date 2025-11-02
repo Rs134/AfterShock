@@ -7,7 +7,13 @@ import OpenAI from "openai";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://aftershock-frontend.onrender.com", // your Render frontend URL
+    "http://localhost:5173", // optional for local dev
+  ],
+  methods: ["POST"],
+}));
 app.use(bodyParser.json());
 
 const client = process.env.OPENAI_API_KEY
