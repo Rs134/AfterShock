@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://aftershock.onrender.com",
+  "https://aftershock.onrender.com"
 ];
 
 app.use(

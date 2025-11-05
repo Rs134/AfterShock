@@ -15,11 +15,12 @@ export default function Chatbot() {
     setIsTyping(true);
 
     try {
-      const res = await fetch("https://aftershock-backend.onrender.com/", {
+      const res = await fetch("https://aftershock-backend.onrender.com/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userMessage.text }),
       });
+      
 
       if (!res.ok) {
         console.error("Server error", res.status);
