@@ -33,12 +33,25 @@ header {
     letter-spacing: 2px;
     color: rgb(0, 94, 255);
     font-size: 40px;
-    border-bottom: 5px solid rgb(107, 90, 255);
-    border-right: 5px solid rgb(107, 90, 255);
-    border-radius: 10px;
-    padding: 5px 10px;
-    border-top-right-radius: 20px;
+
 }
+
+.logo {
+  font-weight: bold;
+  background: linear-gradient(90deg, #005eff, #6b5aff, #00d4ff);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 4s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
 
 nav{
     padding: 30px;
@@ -200,19 +213,22 @@ nav{
     align-items: center;
 }
 
-.service-box{
-    background-color: rgba(42, 42, 57, 0.242);
-    width: 550px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    transition: .5s ease;
-    border: 1px solid rgb(0, 94, 255);
+.service-box {
+  width: clamp(380px, 45vw, 550px); 
+  background-color: rgba(42, 42, 57, 0.242);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: clamp(1rem, 2.5vw, 2rem); 
+  margin: 1.5rem auto; 
+  border: 1px solid rgb(0, 94, 255);
+  border-radius: 8px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  box-shadow: 0 0 10px rgba(0, 94, 255, 0.1);
 }
+
 
 .service-box:hover{
     transform: translateX(10px);
@@ -236,6 +252,7 @@ nav{
     border-top: 5px solid white;
     padding-top: 20px;
     color: rgb(107, 90, 255);
+    text-align: center;
 }
 
 
@@ -293,18 +310,18 @@ nav{
 }
 
 .chatbot-container {
-    max-width: 800px;
-    margin: 5rem auto;
-    background: #020024;
-    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 52%, rgba(9, 9, 121, 1) 100%, rgba(0, 212, 255, 1) 100%); 
-    border-radius: 8px;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    transition: 10s all ease-in-out;
+  width: clamp(350px, 80vw, 800px); 
+  margin: 5rem auto;
+  background: linear-gradient( 180deg,rgba(2, 0, 36, 1) 52%, rgba(9, 9, 121, 1) 100%, rgba(0, 212, 255, 1) 100%);
+  border-radius: 8px;
+  padding: clamp(1rem, 3vw, 2rem); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.4s ease-in-out; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
 
-  }
 
   @keyframes floatUpDown {
     0%, 100% { transform: translateY(0); }
