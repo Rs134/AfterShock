@@ -40,7 +40,7 @@ export default function Chatbot() {
 
   return (
     <div className="chatbot-container">
-      <h1 className="bot-header">AfterShock Chatbot</h1>
+      <h1 className="bot-header">AfterShock Chatbot Currently Unavailable</h1>
 
       <div className="chatbox">
         {messages.map((msg, idx) => (
