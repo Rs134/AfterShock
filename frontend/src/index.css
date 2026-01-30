@@ -331,7 +331,31 @@ nav{
   .chatbot-container {
     animation: glow 10s infinite alternate;
   }
+
+  .chatbot-headline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
   
+  .demo-link{
+    background-color:rgb(107, 90, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+    font-size: 18px;
+    transition: .5s all ease-in-out;
+    text-align: center;
+    padding: .5rem;
+  }
+
+  .demo-link:hover {
+    background-color: rgb(75, 55, 255);
+    transform: translateY(-10px);
+  }
   
   .chatbox {
     height: 500px;
@@ -343,7 +367,7 @@ nav{
     
   .message {
     padding: 0.5rem 1rem;
-    margin-bottom: 0.5rem;
+    margin: 3rem 0rem;
     border-radius: 20px;
     max-width: 70%;
     font-size: 20px;

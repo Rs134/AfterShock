@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { marked } from "marked";
 
-export default function Chatbot() {
+function Chatbot() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
@@ -40,7 +40,10 @@ export default function Chatbot() {
 
   return (
     <div className="chatbot-container">
-      <h1 className="bot-header">AfterShock Chatbot Currently Unavailable</h1>
+      <div className="chatbot-headline">
+        <h1 className="bot-header">AfterShock Chatbot</h1>
+        <a className="demo-link"> View Demo </a>
+      </div>
 
       <div className="chatbox">
         {messages.map((msg, idx) => (
@@ -78,3 +81,5 @@ export default function Chatbot() {
     </div>
   );
 }
+
+export default Chatbot
