@@ -42,7 +42,7 @@ function Chatbot() {
     <div className="chatbot-container">
       <div className="chatbot-headline">
         <h1 className="bot-header">AfterShock Chatbot</h1>
-        <a className="demo-link"> View Demo </a>
+        <a href="https://youtu.be/D-Hm0eS_zyg" className="demo-link"> View Demo </a>
       </div>
 
       <div className="chatbox">
